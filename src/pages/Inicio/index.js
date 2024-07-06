@@ -1,11 +1,23 @@
-import Footer from "components/Footer/Footer";
-import Header from "components/Header/Header";
+import styles from './index.module.css';
+import Banner from "components/Banner/Banner";
+import Card from "components/Card/Card";
+import Titulo from "components/Titulo/Titulo";
+
+import videos from "data/db.json";
 
 function Inicio() {
   return(
     <>
-      <Header />
-      <Footer />
+      <Banner img="home" color="#154580"/>
+      <Titulo>
+        <h1>Un lugar para guardar sus videos favoritos</h1>
+      </Titulo>
+
+      <section className={styles.container}>
+        {videos.map((video) => {
+          return <Card {...video} key={video.id} />
+        })}
+      </section>
     </>
   )
 }
