@@ -1,0 +1,10 @@
+.playerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+iframe{
+    height: 80vh;
+    border-radius: 30px;
+}
