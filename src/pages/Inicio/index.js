@@ -1,6 +1,12 @@
+import Footer from "components/Footer/Footer";
+import Header from "components/Header/Header";
+
 function Inicio() {
   return(
-    <h1>Hola mundo</h1>
+    <>
+      <Header />
+      <Footer />
+    </>
   )
 }
 
